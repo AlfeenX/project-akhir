@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>PENGECEKAN TAHUN LAHIR</h1>
+    <form method="POST" action="./usia" >
+        <label>Masukkan Usia</label>
+        <input type="number" name="tahun_lahir">
+        <button type="submit">Submit</button>
+    </form>
+    {% if umur is not none %}
+        <p>Usia anda saat ini adalah {{usia}} tahun</p>
+    {% endif %}
+    <a href="./">Kembali Ke Halaman Utama</a>
+</body>
+</html>
